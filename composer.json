@@ -1,7 +1,7 @@
 {
     "name": "horde/share",
     "description": "Resource sharing library",
-    "type": "library",
+    "type": "horde-library",
     "homepage": "https://www.horde.org/libraries/Horde_Share",
     "license": "LGPL-2.1",
     "authors": [
@@ -11,42 +11,39 @@
             "role": "lead"
         },
         {
-            "name": "Chuck Hagenbuch",
-            "email": "chuck@horde.org",
+            "name": "Michael J Rubinsky",
+            "email": "mrubinsk@horde.org",
             "role": "lead"
         },
         {
-            "name": "Michael J Rubinsky",
-            "email": "mrubinsk@horde.org",
+            "name": "Chuck Hagenbuch",
+            "email": "chuck@horde.org",
             "role": "lead"
         }
     ],
     "version": "2.2.0",
-    "time": "2017-11-11",
+    "time": "2020-10-27",
     "repositories": [
         {
-            "type": "pear",
-            "url": "https://pear.horde.org"
+            "type": "composer",
+            "url": "https://horde-satis.maintaina.com"
         }
     ],
     "require": {
+        "horde/horde-installer-plugin": "dev-master",
         "php": "^5.3 || ^7",
-        "pear-pear.horde.org/Horde_Db": "^2",
-        "pear-pear.horde.org/Horde_Exception": "^2",
-        "pear-pear.horde.org/Horde_Group": "^2",
-        "pear-pear.horde.org/Horde_Perms": "^2.1",
-        "pear-pear.horde.org/Horde_Support": "^2",
-        "pear-pear.horde.org/Horde_Translation": "^2.2",
-        "pear-pear.horde.org/Horde_Url": "^2",
-        "pear-pear.horde.org/Horde_Util": "^2"
+        "horde/db": "dev-master",
+        "horde/exception": "dev-master",
+        "horde/group": "dev-master",
+        "horde/perms": "dev-master",
+        "horde/support": "dev-master",
+        "horde/translation": "dev-master",
+        "horde/url": "dev-master",
+        "horde/util": "dev-master"
     },
     "suggest": {
-        "pear-pear.horde.org/Horde_Kolab_Storage": "^2",
-        "pear-pear.horde.org/Horde_Test": "^2.1"
-    },
-    "replace": {
-        "pear-pear.horde.org/Horde_Share": "2.*",
-        "pear-horde/Horde_Share": "2.*"
+        "horde/kolab_storage": "^2",
+        "horde/test": "^2.1"
     },
     "autoload": {
         "psr-0": {
